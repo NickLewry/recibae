@@ -3,7 +3,16 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "start:dev": "ts-node-dev index.ts"
+  },
   "dependencies": {
-    "cross-env": "5.0.5"
+    "apollo-server": "^2.11.0",
+    "cross-env": "5.0.5",
+    "graphql": "^14.6.0"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "^1.12.2",
+    "ts-node-dev": "^1.0.0-pre.44"
   }
 }
