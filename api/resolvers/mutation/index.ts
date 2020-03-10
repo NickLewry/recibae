@@ -1,11 +1,9 @@
 export const mutationResolvers = {
-  createRecipe: (parent: any, args: any, context: any) => createRecipe(args)
-};
+  uploadRecipe: async (parent: any, { file }: any) => {
+    const { createReadStream, filename, mimetype, encoding } = await file;
 
-const createRecipe = (args: any) => {
-  return {
-    id: "2",
-    url: "someurl",
-    title: args.title
-  };
+    //TODO upload file to bucket somewhere
+
+    return { filename, mimetype, encoding, url: "" };
+  }
 };

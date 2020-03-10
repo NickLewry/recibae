@@ -11,7 +11,13 @@ export const schema = gql`
     getRecipe(id: ID!): Recipe
   }
 
+  type File {
+    filename: String!
+    mimetype: String!
+    encoding: String!
+  }
+
   type Mutation {
-    createRecipe(title: String!): Recipe
+    uploadRecipe(file: Upload!): File!
   }
 `;
