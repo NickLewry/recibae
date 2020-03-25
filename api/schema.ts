@@ -13,8 +13,7 @@ export const schema = gql`
 
   type File {
     filename: String!
-    mimetype: String!
-    encoding: String!
+    url: String!
   }
 
   type Mutation {

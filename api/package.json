@@ -7,12 +7,15 @@
     "start:dev": "ts-node-dev index.ts"
   },
   "dependencies": {
+    "@google-cloud/firestore": "^3.7.1",
+    "@google-cloud/storage": "^4.5.0",
     "apollo-server": "^2.11.0",
     "cross-env": "5.0.5",
     "graphql": "^14.6.0"
   },
   "devDependencies": {
     "@graphql-codegen/cli": "^1.12.2",
-    "ts-node-dev": "^1.0.0-pre.44"
+    "ts-node-dev": "^1.0.0-pre.44",
+    "typescript": "^3.8.3"
   }
 }

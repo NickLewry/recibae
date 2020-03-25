@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "elegant-gearing-270911",
+  "private_key_id": "e7b7e75adcb6fd82b0b272f03be606e23930dfe6",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDStz8Nx99CUHbN\nxYr4NJ+i5q5nIcr8lqqTLPNuYEC56KCkjfzxWcBAWacOrWYRw7qUVDhbuM3c3jw2\niZ5rcanHlmZr9PY0PFFlYoKYiWiuHKSpfCzeMSuCFC6jDrOAEhl1ZIdf5ow2d/Oj\nyqbzTxIfodRLutkszS+tamn20g23m0/cuVB75dk/Xfvd7O/6cpjBaQdeqQjM8e89\n59eOejY6pRpVHs5zl5EG8TSMK4rZXAa+ER9XTPA0c5J+08t788ZGrJhHsNPAjI5g\nvxAJtrZK9IoflrgkSLF1chSn6Hux/D+KJQycmzMzYugKtvcVFzEmRuAeoApT6FUa\nnqSiwrJ7AgMBAAECggEAMg31nIBuOIKEtjzG1k8p3LiPlVAht/7SZkO3T/Dtbzwj\nbPONsodvc9nYJVRreqzUFYgsGx27SUxBYXMvfrZxbkf77Ik0MxRhAYR1IWcCxtln\nBBvLTLzBaRUCPxmu6i1iftBymAVcKVQ1PCNXpVSTKZB3rcWk8U+Mk9VDdq5PM93y\nPsDnaidJEphMw44XE4KDE9Up14Z/UnAfjBsE2kuRV5SZPLQlPNUW2IKJxJ0utfXI\nDXo6xM54IjNREDQ3hnMIulJnlVoT62YBKuTRMpoKcXB98yZQJpTwFWthkUwz7xW/\n+BpzFSzxICopfz6cRAmXTkOmWH2wpNDXnbK1LD2UAQKBgQD+P6+FHH4GJHRVspBN\nxIZsu+Bd+UV2BegS2pAsAA4nM2mMX5nmW9LebSBKaV5FRlXwfumR/aM43hRZu1OL\nG+KX5lIZ2Enz3L7Lcrwi7+GlpoIp7Vpwk0QRGTpijHA9eZKQJv7GBvMLcetS7fO7\nZ/tKmrQb7otOqx6gVnKhC/mToQKBgQDUKsynJUfvnvfeA/scQ7WZ5Qlbkl/G/Pvi\nPQTG1O1QfUS/7Wfu6t7ykxWMFxxpTgRHIWLgxR7ZAPAjZPW7VRsxUGJbDTygIPGZ\nm4/AQFLgkZYq/UgQoPvVmZhnLWW9YIIrWDDhCF6lTcdoOuLhH/0xqenHJTo06LKc\nlbImVgRQmwKBgQCroLILWUB5RQKDFxbyaEeV/v1mcm7BTRtsHr5T9XWYYMxPRfnN\n1w5xt5ikopxQhzpcLk/djSoxqThzmlC7BwffIkspxyekxs7E5564ttXLzKrxQpha\nhg7cu/r9q2/ZD8gwJyK06twGTdBdGuP9DiREKEqM0GqZoEn8Ul7u9/ZyAQKBgQCk\n5f7Zieg3HN6Y948bkKR8T77OJR27krRSSgqEXslzXWkpomK9Fl7hOd/tWakDT1eT\n0ScAezRWhJwfZkB2sNbJpShMjCUqb3BXash3K4c+cui70M9J3VTd1trUljwUzAVf\nmtOikta8s47gO6RKRIqNJvpDhXOP26u2d8JWeVQxMQKBgCOwpcg4uZKbLMopapAK\n/LcvBJVEBACas5I4e7r/+l2iyDK9DywcODVTjEIwQpizdtBh7Ws5Nr4DKaG16Tfe\nlQ7BvbZQ8wqmLJjUE4vVg+q9Zqfc7vifq+LfU11UMIdprf6igrUIcS6NhqVaGaOK\nGCDdn9CTh5Bs5bsggBeVFfQ3\n-----END PRIVATE KEY-----\n",
+  "client_email": "storage-test@elegant-gearing-270911.iam.gserviceaccount.com",
+  "client_id": "108771046323596620849",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/storage-test%40elegant-gearing-270911.iam.gserviceaccount.com"
+}
