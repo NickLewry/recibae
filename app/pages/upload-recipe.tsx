@@ -1,20 +1,24 @@
 import React from "react";
-import { NextPage } from "next";
 import Link from "next/link";
-import withData from "../lib/apollo";
 import gql from "graphql-tag";
+import { NextPage } from "next";
 import { useMutation } from "@apollo/react-hooks";
+
+import withData from "../lib/apollo";
 
 const UPLOAD_MUTATION = gql`
   mutation upload($file: Upload!) {
     uploadRecipe(file: $file) {
-      filename
+      id
+      userId
+      name
+      url
     }
   }
 `;
 
 const UploadRecipe: NextPage = () => {
-  const [mutate, { loading, error }] = useMutation(UPLOAD_MUTATION);
+  const [mutate] = useMutation(UPLOAD_MUTATION);
 
   const onChange = ({
     target: {
