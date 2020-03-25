@@ -1,7 +1,7 @@
 import { Readable } from "stream";
 
+import { FireStoreInterface, Recipe } from "../../firestore";
 import { StorageInterface } from "../../cloudstorage/storage";
-import { FireStore, FireStoreInterface } from "../../firestore";
 
 export interface File {
   filename: string;
@@ -19,28 +19,25 @@ interface ResolverContext {
   db: FireStoreInterface;
 }
 
-interface Response {
-  filename: string;
-  url: string;
-}
-
 export const mutationResolvers = {
   uploadRecipe: async (
     parent: any,
     args: ResolverArgs,
     context: ResolverContext
-  ): Promise<Response> => {
+  ): Promise<Recipe> => {
     const { file } = args;
     const { storageBucket, db } = context;
 
     const fileToUpload = await file;
 
     await storageBucket.storeFile(fileToUpload);
-    await db.storeRecipe("hi");
+    const storedRecipe = await db.storeRecipe("hi");
 
     return {
-      filename: fileToUpload.filename,
-      url: `https://storage.googleapis.com/img-test-nick/${fileToUpload.filename}`
+      id: storedRecipe.id,
+      url: storedRecipe.url,
+      name: storedRecipe.name,
+      userId: storedRecipe.userId
     };
   }
 };

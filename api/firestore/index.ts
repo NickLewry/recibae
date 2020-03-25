@@ -1,10 +1,15 @@
-interface Recipe {
+import { DocumentData } from "@google-cloud/firestore";
+
+export interface Recipe {
+  id: string;
   userId: string;
-  image: string;
+  url: string;
+  name: string;
 }
 
 export interface FireStoreInterface {
-  storeRecipe: (recipe: any) => Promise<void>;
+  storeRecipe: (recipe: any) => Promise<Recipe>;
+  getRecipes: (userId: string) => Promise<DocumentData[]>;
 }
 
 export class FireStore implements FireStoreInterface {
@@ -14,14 +19,29 @@ export class FireStore implements FireStoreInterface {
     this.db = db;
   }
 
-  public async storeRecipe(recipe: any) {
+  public async getRecipes(userId: string) {
+    const collection = this.db.collection("recipes");
+    const recipes = await collection.where("userId", "==", userId).get();
+    return recipes.docs.map(doc => doc.data());
+  }
+
+  public async storeRecipe(recipe: any): Promise<Recipe> {
     const collection = this.db.collection("recipes");
 
     const data = {
+      name: "test2.png",
       url: "test2.png",
       userId: "Ysq7bvAMcXbWtk0FDDKg"
     };
 
-    await collection.doc().set(data);
+    const ref = collection.doc();
+    await ref.set(data);
+
+    return {
+      id: ref.id,
+      userId: "Ysq7bvAMcXbWtk0FDDKg",
+      name: "test2.png",
+      url: "test2.png"
+    };
   }
 }
